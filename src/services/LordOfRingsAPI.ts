@@ -1,13 +1,15 @@
 import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const LordOfRingsAPI = axios.create({
-  baseURL: import.meta.env.VITE_API_BASE_URL,
+  baseURL: process.env.VITE_API_BASE_URL,
 });
 
 LordOfRingsAPI.interceptors.request.use(
   async (config) => {
     const headers = config.headers || {};
-    headers.Authorization = `Bearer ${import.meta.env.VITE_ACCESS_TOKEN}`;
+    headers.Authorization = `Bearer ${process.env.VITE_ACCESS_TOKEN}`;
     config.headers = headers;
     return config;
   },
