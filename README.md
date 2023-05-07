@@ -7,8 +7,8 @@ This is a React TypeScript app that displays a list of movies from the Lord of t
 To install this app, clone the repository to your local machine and install the dependencies using Yarn or NPM:
 
 ```bash
-git clone https://github.com/PaladinKnightMaster/LOTR_Cody_Project.git
-cd LOTR_Cody_Project
+git clone https://github.com/PaladinKnightMaster/LOTR_API_Project.git
+cd LOTR_API_Project
 yarn install
 ```
 
